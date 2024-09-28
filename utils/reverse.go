@@ -5,7 +5,7 @@ package utils
 import (
 	"context"
 
-	dataframe "github.com/rocketlaunchr/dataframe-go"
+	dataframe "github.com/teastburn/dataframe-go"
 )
 
 type common interface {

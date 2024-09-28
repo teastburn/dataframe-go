@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"time"
 
-	dataframe "github.com/rocketlaunchr/dataframe-go"
-	rlSql "github.com/rocketlaunchr/mysql-go"
+	dataframe "github.com/teastburn/dataframe-go"
+	rlSql "github.com/teastburn/mysql-go"
 )
 
 // Database is used to set the Database.
@@ -74,14 +74,14 @@ type SQLLoadOptions struct {
 
 	// Query can be set to the sql stmt if a *sql.DB, *sql.TX, *sql.Conn or the equivalent from the mysql-go package is provided.
 	//
-	// See: https://godoc.org/github.com/rocketlaunchr/mysql-go
+	// See: https://godoc.org/github.com/teastburn/mysql-go
 	Query string
 }
 
 // LoadFromSQL will load data from a sql database.
 // stmt must be a *sql.Stmt or the equivalent from the mysql-go package.
 //
-// See: https://godoc.org/github.com/rocketlaunchr/mysql-go#Stmt
+// See: https://godoc.org/github.com/teastburn/mysql-go#Stmt
 func LoadFromSQL(ctx context.Context, stmt interface{}, options *SQLLoadOptions, args ...interface{}) (*dataframe.DataFrame, error) {
 
 	var (

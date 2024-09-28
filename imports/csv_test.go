@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	dataframe "github.com/rocketlaunchr/dataframe-go"
+	dataframe "github.com/teastburn/dataframe-go"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -3,13 +3,13 @@
 </p>
 
 <p align="right">
-  <a href="http://godoc.org/github.com/rocketlaunchr/dataframe-go"><img src="http://godoc.org/github.com/rocketlaunchr/dataframe-go?status.svg" /></a>
-  <a href="https://goreportcard.com/report/github.com/rocketlaunchr/dataframe-go"><img src="https://goreportcard.com/badge/github.com/rocketlaunchr/dataframe-go" /></a>
-  <a href="https://gocover.io/github.com/rocketlaunchr/dataframe-go"><img src="http://gocover.io/_badge/github.com/rocketlaunchr/dataframe-go" /></a>
+  <a href="http://godoc.org/github.com/teastburn/dataframe-go"><img src="http://godoc.org/github.com/teastburn/dataframe-go?status.svg" /></a>
+  <a href="https://goreportcard.com/report/github.com/teastburn/dataframe-go"><img src="https://goreportcard.com/badge/github.com/teastburn/dataframe-go" /></a>
+  <a href="https://gocover.io/github.com/teastburn/dataframe-go"><img src="http://gocover.io/_badge/github.com/teastburn/dataframe-go" /></a>
 </p>
 
 <p align="center">
-<img src="https://github.com/rocketlaunchr/dataframe-go/raw/master/assets/logo.png" alt="dataframe-go" />
+<img src="https://github.com/teastburn/dataframe-go/raw/master/assets/logo.png" alt="dataframe-go" />
 </p>
 
 Dataframes are used for statistics, machine-learning, and data manipulation/exploration. You can think of a Dataframe as an excel spreadsheet.
@@ -35,16 +35,16 @@ It is recommended your package manager locks to a commit id instead of the maste
 11. Math functions
 12. Plotting (cross-platform)
 
-See [Tutorial](https://github.com/rocketlaunchr/dataframe-go#tutorial) here.
+See [Tutorial](https://github.com/teastburn/dataframe-go#tutorial) here.
 
 ## Installation
 
 ```
-go get -u github.com/rocketlaunchr/dataframe-go
+go get -u github.com/teastburn/dataframe-go
 ```
 
 ```go
-import dataframe "github.com/rocketlaunchr/dataframe-go"
+import dataframe "github.com/teastburn/dataframe-go"
 ```
 
 # DataFrames
@@ -224,8 +224,8 @@ std := stat.StdDev(sf.Values, nil)
 ```go
 import (
 	chart "github.com/wcharczuk/go-chart"
-	"github.com/rocketlaunchr/dataframe-go/plot"
-	wc "github.com/rocketlaunchr/dataframe-go/plot/wcharczuk/go-chart"
+	"github.com/teastburn/dataframe-go/plot"
+	wc "github.com/teastburn/dataframe-go/plot/wcharczuk/go-chart"
 )
 
 sales := dataframe.NewSeriesFloat64("sales", nil, 50.3, nil, 23.4, 56.2, 89, 32, 84.2, 72, 89)
@@ -243,13 +243,13 @@ plt.Display(plot.None)
 Output:
 
 <p align="center">
-<img src="https://github.com/rocketlaunchr/dataframe-go/raw/master/assets/plot.png" alt="plot" />
+<img src="https://github.com/teastburn/dataframe-go/raw/master/assets/plot.png" alt="plot" />
 </p>
 
 ## Math Functions
 
 ```go
-import "github.com/rocketlaunchr/dataframe-go/math/funcs"
+import "github.com/teastburn/dataframe-go/math/funcs"
 
 res := 24
 sx := dataframe.NewSeriesFloat64("x", nil, utils.Float64Seq(1, float64(res), 1))
@@ -264,7 +264,7 @@ funcs.Evaluate(ctx, df, fn, 1)
 Output:
 
 <p align="center">
-<img src="https://github.com/rocketlaunchr/dataframe-go/raw/master/assets/sine.png" alt="sine wave" />
+<img src="https://github.com/teastburn/dataframe-go/raw/master/assets/sine.png" alt="sine wave" />
 </p>
 
 ## Importing Data
@@ -478,15 +478,15 @@ seniors, _ := dataframe.Filter(ctx, df, filterFn)
 
 ## Other useful packages
 
-- [awesome-svelte](https://github.com/rocketlaunchr/awesome-svelte) - Resources for killing react
-- [dbq](https://github.com/rocketlaunchr/dbq) - Zero boilerplate database operations for Go
-- [electron-alert](https://github.com/rocketlaunchr/electron-alert) - SweetAlert2 for Electron Applications
-- [google-search](https://github.com/rocketlaunchr/google-search) - Scrape google search results
-- [igo](https://github.com/rocketlaunchr/igo) - A Go transpiler with cool new syntax such as fordefer (defer for for-loops)
-- [mysql-go](https://github.com/rocketlaunchr/mysql-go) - Properly cancel slow MySQL queries
-- [react](https://github.com/rocketlaunchr/react) - Build front end applications using Go
-- [remember-go](https://github.com/rocketlaunchr/remember-go) - Cache slow database queries
-- [testing-go](https://github.com/rocketlaunchr/testing-go) - Testing framework for unit testing
+- [awesome-svelte](https://github.com/teastburn/awesome-svelte) - Resources for killing react
+- [dbq](https://github.com/teastburn/dbq) - Zero boilerplate database operations for Go
+- [electron-alert](https://github.com/teastburn/electron-alert) - SweetAlert2 for Electron Applications
+- [google-search](https://github.com/teastburn/google-search) - Scrape google search results
+- [igo](https://github.com/teastburn/igo) - A Go transpiler with cool new syntax such as fordefer (defer for for-loops)
+- [mysql-go](https://github.com/teastburn/mysql-go) - Properly cancel slow MySQL queries
+- [react](https://github.com/teastburn/react) - Build front end applications using Go
+- [remember-go](https://github.com/teastburn/remember-go) - Cache slow database queries
+- [testing-go](https://github.com/teastburn/testing-go) - Testing framework for unit testing
 
 #
 
