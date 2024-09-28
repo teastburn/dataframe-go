@@ -82,7 +82,7 @@ type PrimaryKey struct {
 //  	stdSql "database/sql"
 //
 //  	"github.com/teastburn/dataframe-go/exports"
-//  	sql "github.com/teastburn/mysql-go"
+//  	sql "github.com/rocketlaunchr/mysql-go"
 //  	"github.com/myesui/uuid"
 //  )
 //
