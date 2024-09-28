@@ -88,7 +88,7 @@ func (df *DataFrame) Row(row int, dontReadLock bool, retOpt ...SeriesReturnOpt) 
 		defer df.lock.RUnlock()
 	}
 
-	out := make(map[interface{}]interface{}{}, len(df.Series))
+	out := make(map[interface{}]interface{}, len(df.Series))
 
 	for idx, aSeries := range df.Series {
 		val := aSeries.Value(row)
