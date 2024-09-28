@@ -18,10 +18,10 @@ require (
 	github.com/ompluscator/dynamic-struct v1.3.0
 	github.com/rocketlaunchr/dbq/v2 v2.5.0
 	github.com/rocketlaunchr/mysql-go v1.1.3
-	github.com/sandertv/go-formula/v2 v2.0.0-alpha.7
 	github.com/sirupsen/logrus v1.6.0 // indirect
 	github.com/stretchr/testify v1.5.1
 	github.com/tealeg/xlsx/v3 v3.0.0
+	github.com/teastburn/go-formula v1.0.1-0.20240928031122-30db22049fb3 // indirect
 	github.com/wcharczuk/go-chart v2.0.1+incompatible
 	github.com/xitongsys/parquet-go v1.5.2
 	github.com/xitongsys/parquet-go-source v0.0.0-20200509081216-8db33acb0acf

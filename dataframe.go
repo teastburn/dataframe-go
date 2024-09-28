@@ -27,7 +27,7 @@ func NewDataFrame(se ...Series) *DataFrame {
 
 	if len(se) > 0 {
 		var count *int
-		names := map[string]struct{}{}
+		names := make(map[string]struct{}, len(se))
 
 		for _, s := range se {
 			if count == nil {
@@ -88,7 +88,7 @@ func (df *DataFrame) Row(row int, dontReadLock bool, retOpt ...SeriesReturnOpt) 
 		defer df.lock.RUnlock()
 	}
 
-	out := map[interface{}]interface{}{}
+	out := make(map[interface{}]interface{}{}, len(df.Series))
 
 	for idx, aSeries := range df.Series {
 		val := aSeries.Value(row)
@@ -191,7 +191,7 @@ func (df *DataFrame) ValuesIterator(opts ...ValuesOptions) func(opts ...SeriesRe
 			return nil, nil, t
 		}
 
-		out := map[interface{}]interface{}{}
+		out := make(map[interface{}]interface{}, len(df.Series))
 
 		for idx, aSeries := range df.Series {
 			val := aSeries.Value(row)
@@ -252,7 +252,7 @@ func (df *DataFrame) insert(row int, vals ...interface{}) {
 		case map[interface{}]interface{}:
 
 			// Check if number of vals is equal to number of series
-			names := map[string]struct{}{}
+			names := make(map[string]struct{}, len(v))
 
 			for key := range v {
 				switch kTyp := key.(type) {
@@ -446,7 +446,7 @@ func (df *DataFrame) ReorderColumns(newOrder []string, opts ...Options) error {
 	}
 
 	// Check if newOrder contains duplicates
-	fields := map[string]struct{}{}
+	fields := make(map[string]struct{}, len(newOrder))
 	for _, v := range newOrder {
 		fields[v] = struct{}{}
 	}

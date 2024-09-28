@@ -204,16 +204,17 @@ func Evaluate(ctx context.Context, df *dataframe.DataFrame, fn PiecewiseFuncDefn
 			}
 		}
 		vals := df.Row(row, true, dataframe.SeriesName)
+		vars := make(map[string]float64, len(vals))
 		for k, v := range vals {
 			switch v.(type) {
 			case nil:
-				variables = append(variables, formula.Var(k.(string), math.NaN()))
+				vars[k.(string)] = math.NaN()
 			case float64:
-				variables = append(variables, formula.Var(k.(string), v.(float64)))
+				vars[k.(string)] = v.(float64)
 			}
 		}
 
-		rval, err := f.Eval(variables...)
+		rval, err := f.EvalWithoutConstants(vars)
 		if err != nil {
 			return errors.New(err.Error())
 		}
