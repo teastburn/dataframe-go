@@ -10,7 +10,7 @@ import (
 	"math"
 
 	dataframe "github.com/teastburn/dataframe-go"
-	"github.com/sandertv/go-formula/v2"
+	"github.com/teastburn/go-formula/v2"
 )
 
 // EvaluateOptions modifies the behavior of the Evaluate function.
