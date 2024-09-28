@@ -13,7 +13,7 @@ import (
 	"time"
 
 	dataframe "github.com/teastburn/dataframe-go"
-	"github.com/teastburn/dbq/v2"
+	"github.com/rocketlaunchr/dbq/v2"
 )
 
 // Database is used to set the Database.

@@ -479,7 +479,7 @@ seniors, _ := dataframe.Filter(ctx, df, filterFn)
 ## Other useful packages
 
 - [awesome-svelte](https://github.com/rocketlaunchr/awesome-svelte) - Resources for killing react
-- [dbq](https://github.com/teastburn/dbq) - Zero boilerplate database operations for Go
+- [dbq](https://github.com/rocketlaunchr/dbq) - Zero boilerplate database operations for Go
 - [electron-alert](https://github.com/rocketlaunchr/electron-alert) - SweetAlert2 for Electron Applications
 - [google-search](https://github.com/rocketlaunchr/google-search) - Scrape google search results
 - [igo](https://github.com/rocketlaunchr/igo) - A Go transpiler with cool new syntax such as fordefer (defer for for-loops)
