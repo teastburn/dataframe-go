@@ -21,7 +21,7 @@ require (
 	github.com/sirupsen/logrus v1.6.0 // indirect
 	github.com/stretchr/testify v1.5.1
 	github.com/tealeg/xlsx/v3 v3.0.0
-	github.com/teastburn/go-formula v1.0.1-0.20240928031122-30db22049fb3 // indirect
+	github.com/teastburn/go-formula/v2 v2.0.0-20240928031122-30db22049fb3
 	github.com/wcharczuk/go-chart v2.0.1+incompatible
 	github.com/xitongsys/parquet-go v1.5.2
 	github.com/xitongsys/parquet-go-source v0.0.0-20200509081216-8db33acb0acf
